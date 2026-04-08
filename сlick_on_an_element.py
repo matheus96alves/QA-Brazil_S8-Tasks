@@ -7,13 +7,13 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 
 # Abra a URL especificada no navegador
-driver.get(" SERVER URL ")
+driver.get("https://cnt-47f7831d-675d-4bc8-a0d7-257851f70b7d.containerhub.tripleten-services.com/?lng=pt")
 
 # Pause a execução por 2 segundos para permitir que a página carregue por completo
 time.sleep(2)
 
 # Encontre o botão usando seu XPath e clique nele
-driver.find_element(...)...
+driver.find_element(By.XPATH, "//button[@class='close-button input-close-button']").click()
 
 # Pause a execução por 2 segundos para permitir que você veja os resultados do clique
 time.sleep(2)

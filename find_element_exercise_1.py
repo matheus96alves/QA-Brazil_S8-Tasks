@@ -7,13 +7,13 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 
 # Abra a URL especificada no navegador
-driver.get(" SERVER URL ")
+driver.get("https://cnt-b743060d-d15b-409f-8982-9c879aa057c0.containerhub.tripleten-services.com/?lng=pt")
 
 # Pause a execução por 2 segundos para permitir que a página carregue por completo
 time.sleep(2)
 
 # Encontre o elemento de título usando seu seletor de CSS
-driver...
+driver.find_element(By.CSS_SELECTOR, ".logo-disclaimer")
 
 # Feche o navegador e encerre a sessão do WebDriver
-driver...
+driver.quit()
